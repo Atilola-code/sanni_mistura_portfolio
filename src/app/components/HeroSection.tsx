@@ -48,7 +48,7 @@ export default function HeroSection() {
           <span className="relative z-10 group-hover:text-white transition-colors duration-500">Contact Info</span>
         </a>
         <a
-          href="#contact"
+          href="#projects"
           className="inline-block mt-12 px-6 py-3 border-2 text-[#FBFDFE] border-[#F95353] font-medium rounded-2xl relative overflow-hidden group transition-all"
           >
           <span className="absolute inset-0 bg-[#F95353] transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></span>
