@@ -139,7 +139,7 @@ export default function Contact() {
 
           {success && (
             <p className="mt-4 text-green-600 text-center font-medium">
-            Message sent successfully!
+            Thank you for reaching out!
             </p>
           )}
         </form>
