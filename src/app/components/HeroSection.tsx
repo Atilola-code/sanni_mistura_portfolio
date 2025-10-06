@@ -1,15 +1,15 @@
 "use client"
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
+
 
 export default function HeroSection() {
   return (
-    <section id="home" className="flex flex-col md:flex-row items-center justify-between min-h-[100vh] px-8 md:px-32 pt-8 bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat relative gap-8">
+    <section id="home" className="overflow-x-hidden flex flex-col lg:flex-row items-center justify-between h-screen px-8 md:px-16 pt-28 sm:pt-22 lg:pt-8 bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat relative">
       <div className="absolute inset-0 bg-black/60 "></div>
       <div className="flex-1 md:flex-none max-w-xl md:max-w-2xl relative z-10">
-        <p className="text-xl md:text-xl font-semibold uppercase text-[#F95353] mb-4">Hello!</p>
-        <h1 className="text-3xl md:text-5xl font-bold text-white leading-snug mb-4">
+        <p className="text-sm lg:text-xl font-semibold uppercase text-[#F95353] mb-4">Hello!</p>
+        <h1 className="text-2xl lg:text-5xl font-bold text-white leading-snug mb-4">
           I am {" "}
           <TypeAnimation
             sequence={[
@@ -34,7 +34,7 @@ export default function HeroSection() {
           className="text-[#F95353]"
           />
         </h1>
-        <div className="mt-6 max-w-lg text-md text-white leading-relaxed space-y-2">
+        <div className="mt-6 max-w-sm md:max-w-lg text-sm md:text-sm lg:text-lg text-white leading-relaxed space-y-2">
         <p>
           I am a passionate fullstack web developer with a keen interest in creating beautiful and functional web applications.
         </p>
@@ -42,14 +42,14 @@ export default function HeroSection() {
         </div>
         <a
           href="#contact"
-          className="inline-block mt-12 px-6 py-3 border-2 text-[#FBFDFE] border-[#F95353] font-medium rounded-2xl mr-6 relative overflow-hidden group transition-all"
+          className="inline-flex ml-20 md:ml-0 mt-12 px-4 md:px-6 py-3 border-2 text-[#FBFDFE] border-[#F95353] font-medium rounded-2xl mr-4 md:mr-6 relative overflow-hidden group transition-all"
           >
           <span className="absolute inset-0 bg-[#F95353] transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></span>
           <span className="relative z-10 group-hover:text-white transition-colors duration-500">Contact Info</span>
         </a>
         <a
           href="#projects"
-          className="inline-block mt-12 px-6 py-3 border-2 text-[#FBFDFE] border-[#F95353] font-medium rounded-2xl relative overflow-hidden group transition-all"
+          className="inline-flex mt-12 md:ml-0 px-4 md:px-6 py-3 border-2 text-[#FBFDFE] border-[#F95353] font-medium rounded-2xl relative overflow-hidden group transition-all"
           >
           <span className="absolute inset-0 bg-[#F95353] transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></span>
           <span className="relative z-10 group-hover:text-white transition-colors duration-500">View Works</span>
@@ -57,14 +57,18 @@ export default function HeroSection() {
             </div>
 
         {/* Portfolio Image */}
-        <Image
-          src="/portfolio.png"
-          alt="A personal portfolio image"
-          width={400}
-          height={400}
-          className="relative object-contain w-[280px] sm:w-[350px] md:w-[400px] lg:w-[400px] xl:w-[500px] h-auto"
-          priority
-        />
+<div className="relative z-10 p-2 rounded-full mb-8 lg:mb-0 bg-gradient-to-tr from-[#F95353] via-[#ff8c8c] to-[#F95353] shadow-lg shadow-[#F95353]/40 hover:scale-105 transition-transform duration-500">
+  <div className="bg-[#4A335B]/80 p-2 rounded-full">
+    <Image
+      src="/Atilola-portfolio.jpg"
+      alt="A personal portfolio image"
+      width={400}
+      height={400}
+      className="rounded-full object-top object-cover bg-[#4E385F] aspect-square w-[220px] sm:w-[250px] lg:w-[400px] xl:w-[500px] h-auto"
+      priority
+    />
+  </div>
+</div>
     </section>
   );
 }

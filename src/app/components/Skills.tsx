@@ -5,7 +5,7 @@ import {
   FaGitAlt,
   FaGithub
 } from "react-icons/fa";
-import { SiNextdotjs, SiDjango, SiTailwindcss, SiAdobephotoshop, SiPostman, SiNetlify, SiVercel } from "react-icons/si";
+import { SiNextdotjs, SiDjango, SiTailwindcss, SiPostman, SiNetlify, SiVercel } from "react-icons/si";
 
 const skillsData = [
   // Frontend
@@ -52,12 +52,12 @@ export default function Skills() {
         </h2>
 
         {/* Filter Tabs */}
-        <div className="flex justify-center gap-6 mb-8">
+        <div className="flex justify-center gap-6 mb-8 ">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-2 rounded-full font-medium transition duration-500 ${
+              className={`px-4 md:px-6 py-2 text-sm md:text-lg rounded-full font-medium transition duration-500 ${
                 selectedCategory === category
                   ? "bg-[#F95353] text-white shadow-xl"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"

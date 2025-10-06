@@ -19,7 +19,7 @@ export default function AboutMe() {
                   alt="A personal portfolio image for about me section"
                   width={320}   
                   height={420}
-                  className="object-cover w-[200px] sm:w-[250px] md:w-[300px] lg:w-[380px] h-auto"
+                  className="object-cover w-[250px] sm:w-[300px] md:w-[350px] lg:w-[380px] h-auto"
                   priority
                 />
               </div>

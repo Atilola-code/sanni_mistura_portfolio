@@ -49,10 +49,10 @@ export default function Contact() {
   });
 
   return (
-    <section id="contact" className="px-6 md:px-12 py-16 bg-[#F9FAFB]  shadow-2xl">
+    <section id="contact" className="px-4 md:px-12 py-16 bg-[#F9FAFB] shadow-2xl overflow-x-hidden">
       <h2 className="text-3xl md:text-5xl font-bold text-center mb-10">Contact Me</h2>
 
-    <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+    <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-2xl p-4 md:p-12">
         <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto items-center">
         <div className="hidden md:block">
           <Image
@@ -60,14 +60,14 @@ export default function Contact() {
             alt="Contact Illustration"
             width={500}
             height={500}
-            className="rounded-xl bg-[#F95353] p-4 shadow-lg"
+            className="rounded-xl bg-[#F95353] p-4 shadow-lg w-full h-auto"
           />
         </div>
 
         {/* Form */}
         <form
           onSubmit={formik.handleSubmit}
-          className="bg-white p-8 rounded-2xl w-full"
+          className="bg-white p-4 md:p-8 rounded-2xl w-full"
         >
           {/* Name */}
           <div className="mb-5">

@@ -83,7 +83,7 @@ export default function Projects(): JSX.Element {
     <section id="projects" className="min-h-screen bg-[#f9fafb] px-6 md:px-20 py-16">
       <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-800 mb-12">Projects</h2>
 
-      <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project: Project) => (
           <div
             key={project.id}
